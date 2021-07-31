@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="@dimen/_6sdp"
+    android:background="@drawable/round_corner_edt"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/competencies_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/metropolis_bold"
+            android:text="Select Compentecy"
+            android:textColor="@color/name_color"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <TextView
+            android:id="@+id/competency_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/metropolis_regular"
+            android:text="2 Competencies"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:textColor="@color/filed_title_color"
+            android:textSize="@dimen/_10ssp" />
+
+    </LinearLayout>
+
+    <com.iarcuschin.simpleratingbar.SimpleRatingBar
+        android:id="@+id/ratingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        app:srb_starSize="@dimen/_20sdp"
+        android:layout_marginVertical="@dimen/_3sdp"
+        app:srb_numberOfStars="5"
+        app:srb_rating="3"
+        app:srb_stepSize="0.5"
+        app:srb_starsSeparation="@dimen/_25sdp"
+        app:srb_borderColor="#9DA0A3"
+        app:srb_starBackgroundColor="#9DA0A3"
+        app:srb_starBorderWidth="1"
+        app:srb_fillColor="#0261ff"
+        />
+
+
+</LinearLayout>

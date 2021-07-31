@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/view_bg"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/_12sdp"
+    android:backgroundTint="#e2f9ef"
+    android:layout_marginVertical="@dimen/_5sdp"
+    android:background="@drawable/round_corner_compentency"
+    android:orientation="horizontal">
+
+
+    <TextView
+        android:id="@+id/rate_count"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metropolis_regular"
+        android:text="5"
+        android:textColor="#5bdba8"
+        android:layout_gravity="center"
+        android:textSize="@dimen/_10ssp" />
+
+    <ImageView
+        android:id="@+id/rate_img"
+        android:layout_width="@dimen/_10sdp"
+        android:layout_height="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:src="@drawable/ic_star" />
+
+    <TextView
+        android:id="@+id/competency_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/metropolis_regular"
+        android:text="Transparent Communication"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_gravity="center"
+        android:textColor="#5bdba8"
+        android:textSize="@dimen/_10ssp" />
+
+</LinearLayout>

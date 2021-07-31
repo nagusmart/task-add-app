@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/task_implementation_navigation"
+    app:startDestination="@id/addTaskFragment">
+
+    <fragment
+        android:id="@+id/addTaskFragment"
+        android:name="com.example.selfdrvntest.view.AddTaskFragment"
+        android:label="fragment_add_task"
+        tools:layout="@layout/fragment_add_task" >
+        <action
+            android:id="@+id/action_addTaskFragment_to_addCompetencyFragment"
+            app:destination="@id/addCompetencyFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCompetencyFragment"
+        android:name="com.example.selfdrvntest.view.AddCompetencyFragment"
+        android:label="fragment_add_competency"
+        tools:layout="@layout/fragment_add_competency" >
+        <action
+            android:id="@+id/action_addCompetencyFragment_to_addRateFragment"
+            app:destination="@id/addRateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addRateFragment"
+        android:name="com.example.selfdrvntest.view.AddRateFragment"
+        android:label="fragment_add_rate"
+        tools:layout="@layout/fragment_add_rate" >
+        <action
+            android:id="@+id/action_addRateFragment_to_addTaskFragment"
+            app:destination="@id/addTaskFragment" />
+    </fragment>
+</navigation>
