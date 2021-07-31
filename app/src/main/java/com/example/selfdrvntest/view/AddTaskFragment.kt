@@ -185,14 +185,18 @@ class AddTaskFragment : Fragment() {
 
             val itemType = object : TypeToken<StorageModel>() {}.type
             var storageModel = Gson().fromJson<StorageModel>(data, itemType)
-            binding.employeName.text = storageModel.name
-            (binding.taskTitle as TextView).text = storageModel.taskTitle
-            binding.dateTxt.setText(storageModel.date)
-            (binding.feedBackEdt as TextView).text = storageModel.message
+            if (storageModel != null) {
+                binding.employeName.text = storageModel.name
 
-            if (storageModel.imageBitmap != null)
-                binding.employeImg.setImageBitmap(storageModel.imageBitmap)
+                (binding.taskTitle as TextView).text = storageModel.taskTitle
 
+                binding.dateTxt.text = storageModel.date
+
+                (binding.feedBackEdt as TextView).text = storageModel.message
+
+                if (storageModel.imageBitmap != null)
+                    binding.employeImg.setImageBitmap(storageModel.imageBitmap)
+            }
             if (arguments?.getString("ScreenThreeData") != null) {
 
                 var data = arguments?.getString("ScreenThreeData")
